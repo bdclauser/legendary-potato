@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Serifa";
+  src: url("Serifa-Reg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Serifa";
+  src: url("Serifa-RegIta.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("Radomir Tinkov - Gilroy-SemiBoldItalic.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("Radomir Tinkov - Gilroy-SemiBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("Radomir Tinkov - Gilroy-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("Radomir Tinkov - Gilroy-MediumItalic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("Radomir Tinkov - Gilroy-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("Radomir Tinkov - Gilroy-BoldItalic.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
