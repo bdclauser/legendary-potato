@@ -3,9 +3,11 @@ from pygame import display, event
 
 pygame.init()
 
+
 display.set_caption('My Game')
 
-screen = display.set_mode(512, 512)
+
+screen = display.set_mode((512, 512))
 
 running = True
 
