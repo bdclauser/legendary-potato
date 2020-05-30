@@ -1,5 +1,5 @@
 import pygame
-from pygame import display, event
+from pygame import display, event, image
 
 pygame.init()
 
