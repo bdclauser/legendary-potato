@@ -1,7 +1,15 @@
 import pygame
-from pygame import display, image, event
+from pygame import display, event, image
+
 import game_config as gc
 from animal import Animal
+
+
+def find_index(x, y):
+    row = y // gc.IMAGE_SIZE
+    col = x // gc.IMAGE_SIZE
+    index = row * gc.NUM_TILES_SIDE + col
+    return index
 
 
 pygame.init()
@@ -26,7 +34,7 @@ while running:
 
         if e.type == pygame.MOUSEBUTTONDOWN:
             mouse_x, mouse_y = pygame.mouse.get_pos()
-            print(mouse_x, mouse_y)
+            index = find_index(mouse_x, mouse_y)
 
     screen.fill((255, 255, 255))
 
