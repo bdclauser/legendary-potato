@@ -42,9 +42,11 @@ while running:
 
     screen.fill((255, 255, 255))
 
-    for tile in tiles:
-        screen.blit(tile.image, (tile.col * gc.IMAGE_SIZE + gc.MARGIN,
-                                 tile.row * gc.IMAGE_SIZE + gc.MARGIN))
+    for _, tile in enumerate(tiles):
+        image_i = tile.image if tile.index in current_images else tile.box
+
+        screen.blit(image_i, (tile.col * gc.IMAGE_SIZE + gc.MARGIN,
+                              tile.row * gc.IMAGE_SIZE + gc.MARGIN))
 
     display.flip()
 
