@@ -20,6 +20,7 @@ matched = image.load('other_assets/matched.png')
 
 running = True
 tiles = [Animal(i) for i in range(0, gc.NUM_TILES_TOTAL)]
+current_images = []
 
 while running:
     current_events = event.get()
@@ -35,6 +36,9 @@ while running:
         if e.type == pygame.MOUSEBUTTONDOWN:
             mouse_x, mouse_y = pygame.mouse.get_pos()
             index = find_index(mouse_x, mouse_y)
+            current_images.append(index)
+            if len(current_images) > 2:
+                current_images = current_images[1:]
 
     screen.fill((255, 255, 255))
 
