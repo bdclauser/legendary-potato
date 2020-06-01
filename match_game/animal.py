@@ -1,8 +1,7 @@
 import os
 import random
-
+import game_config as gc
 from pygame import image, transform
-import gc
 
 animals_count = dict((a, 0) for a in gc.ASSET_FILES)
 

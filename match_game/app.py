@@ -1,8 +1,7 @@
 import pygame
-
-from pygame import display, event, image
-from match_game.animal import Animal
-import gc
+from pygame import display, image, event
+import game_config as gc
+from animal import Animal
 
 
 pygame.init()
@@ -20,6 +19,14 @@ while running:
     for e in current_events:
         if e.type == pygame.QUIT:
             running = False
+
+        if e.type == pygame.KEYDOWN:
+            if e.key == pygame.K_ESCAPE:
+                running = False
+
+        if e.type == pygame.MOUSEBUTTONDOWN:
+            mouse_x, mouse_y = pygame.mouse.get_pos()
+            print(mouse_x, mouse_y)
 
     screen.fill((255, 255, 255))
 
