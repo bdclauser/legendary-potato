@@ -44,9 +44,15 @@ while running:
 
     for _, tile in enumerate(tiles):
         image_i = tile.image if tile.index in current_images else tile.box
+        if not tile.skip:
+            screen.blit(image_i, (tile.col * gc.IMAGE_SIZE + gc.MARGIN,
+                                  tile.row * gc.IMAGE_SIZE + gc.MARGIN))
 
-        screen.blit(image_i, (tile.col * gc.IMAGE_SIZE + gc.MARGIN,
-                              tile.row * gc.IMAGE_SIZE + gc.MARGIN))
+    if len(current_images) == 2:
+        idx1, idx2 = current_images
+        if tiles[idx1].name == tiles[idx2].name:
+            tiles[idx1].skip = True
+            tiles[idx2].skip = True
 
     display.flip()
 
