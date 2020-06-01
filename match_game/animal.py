@@ -1,7 +1,8 @@
 import os
 import random
-import game_config as gc
+
 from pygame import image, transform
+import gc
 
 animals_count = dict((a, 0) for a in gc.ASSET_FILES)
 
@@ -20,8 +21,8 @@ class Animal:
 
         self.image_path = os.path.join(gc.ASSET_DIR, self.name)
         self.image = image.load(self.image_path)
-        self.image = transform.scale(self.image(
-            gc.IMAGE_SIZE - 2 * gc.MARGIN, gc.IMAGE_SIZE - 2 * gc.MARGIN))
+        self.image = transform.scale(
+            self.image, (gc.IMAGE_SIZE - 2 * gc.MARGIN, gc.IMAGE_SIZE - 2 * gc.MARGIN))
         self.box = self.image.copy()
         self.box.fill((200, 200, 200))
         self.skip = False
