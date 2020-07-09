@@ -1,0 +1,278 @@
+<style type="text/css">
+    #custom_form_body_1437 .table {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #custom_form_body_1437 .table th,
+    #custom_form_body_1437 .table td {
+        padding: .3rem;
+        vertical-align: top;
+        border-top: 1px solid white;
+        font-size: small;
+    }
+
+    #custom_form_body_1437 .table thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid white;
+    }
+
+    #custom_form_body_1437 .table tbody+tbody {
+        border-top: 2px solid black;
+    }
+
+    #custom_form_body_1437 .table .table {
+        background-color: #fff;
+    }
+
+    #custom_form_body_1437 .table-bordered {
+        border: 1px solid black;
+    }
+
+    #custom_form_body_1437 .table-bordered th,
+    #custom_form_body_1437 .table-bordered td {
+        border: 1px solid black;
+    }
+
+    #custom_form_body_1437 .table-bordered thead th,
+    #custom_form_body_1437 .table-bordered thead td {
+        border-bottom-width: 2px;
+    }
+
+    #custom_form_body_1437 .table-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0, 0, 0, .05);
+    }
+
+    #custom_form_body_1437 .table tbody tr td {
+        border-top: none;
+    }
+
+    #custom_form_body_1437 #form-control {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .75);
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    }
+
+    #custom_form_body_1437 hr.new2 {
+        border-top: 1px dashed red;
+    }
+</style>
+<div id="custom_form_body_1437">
+    <h4 style="text-align: center;"><img alt="Piedmont Athens Regional" class="img-responsive center-block"
+            src="/file-manager/get/hGDtCd0sYx0x5f0679b9509df" style="width: 324px; height: 84px;" /><br />
+        <br />
+        Data Entry Form</h4>
+
+    <section style="padding-top: 2em;">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="width: 50%; text-align: left; vertical-align: top;"><label
+                                for="inputstudent">Student:</label> <input required="required" class="form-control"
+                                id="inputstudent" maxlength="255" name="student" placeholder="Student" title="Student"
+                                type="text" /></td>
+                        <td colspan="2" style="text-align: left; vertical-align: top; width: 50%;"><label
+                                for="inputfaculty">Faculty: </label> <input required="required" class="form-control"
+                                id="inputfaculty" name="faculty" placeholder="Faculty" title="Faculty" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="width: 50%; text-align: left; vertical-align: top;"><label
+                                for="inputstartdate">Start Date: </label> <input required="required"
+                                class="form-control" id="inputstartdate" maxlength="10" name="startdate"
+                                onkeyup="this.value=this.value.replace(/^(\d\d)(\d)$/g,'$1/$2').replace(/^(\d\d\/\d\d)(\d+)$/g,'$1/$2').replace(/[^\d\/]/g,'')"
+                                placeholder="MM/DD/YYYY" title="Start Date" type="text" /></td>
+                        <td colspan="2" style="width: 50%; text-align: left; vertical-align: top;"><label
+                                for="inputorientation_date">Orientation Date: </label> <input required="required"
+                                class="form-control" id="inputorientation_date" maxlength="10" name="orientation_date"
+                                onkeyup="this.value=this.value.replace(/^(\d\d)(\d)$/g,'$1/$2').replace(/^(\d\d\/\d\d)(\d+)$/g,'$1/$2').replace(/[^\d\/]/g,'')"
+                                placeholder="MM/DD/YYYY" title="Orientation Date" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="width: 100%; text-align:left; vertical-align:top;"><label
+                                for="inputschool">School: </label> <input required="required" class="form-control"
+                                id="inputschool" maxlength="255" name="school" placeholder="School Name:" title="School"
+                                type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="width: 100%; text-align:left; vertical-align:top;"><label
+                                for="inputprogram">Program: </label> <input required="required" class="form-control"
+                                id="inputprogram" maxlength="255" name="program" placeholder="Program Name:"
+                                title="Program" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="width: 100%; text-align:left; vertical-align:top;"><label
+                                for="inputgrad_date">Expected Graduation Date: </label> <input required="required"
+                                class="form-control" id="inputgrad_date" maxlength="10" name="grad_date"
+                                onkeyup="this.value=this.value.replace(/^(\d\d)(\d)$/g,'$1/$2').replace(/^(\d\d\/\d\d)(\d+)$/g,'$1/$2').replace(/[^\d\/]/g,'')"
+                                placeholder="MM/DD/YYYY" title="Expected Graduation Date" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 25%; text-align:left; vertical-align:top;"><label for="inputfirst_name">First
+                                Name: </label> <input required="required" class="form-control" id="inputfirst_name"
+                                maxlength="175" name="first_name" placeholder="First Name:" title="First Name"
+                                type="text" /></td>
+                        <td style="text-align:left; vertical-align:top;"><label for="inputmiddle_name">Middle Name:
+                            </label> <input required="required" class="form-control" id="inputmiddle_name"
+                                maxlength="175" name="middle_name" placeholder="Middle Name:" title="Middle Name"
+                                type="text" /></td>
+                        <td colspan="2" style="width:50%;text-align:left; vertical-align:top;"><label
+                                for="inputlast_name">Last Name: </label> <input required="required" class="form-control"
+                                id="inputlast_name" maxlength="255" name="last_name" placeholder="Last Name:"
+                                title="Last Name" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="width: 100%; text-align:left; vertical-align:top;"><label
+                                for="inputthesocial">Last 4 digits of SSN: </label> <input required="required"
+                                class="form-control" id="inputthesocial" maxlength="5" name="thesocial"
+                                placeholder="5555" title="Last 4 SSN" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="width: 100%; text-align:left; vertical-align:top;"><label
+                                for="inputaddress">Address: </label> <input required="required" class="form-control"
+                                id="inputaddress" maxlength="175" name="address" placeholder="Address:" title="Address"
+                                type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:left; vertical-align:top;"><label for="inputcity">City:
+                            </label> <input required="required" class="form-control" id="inputcity" maxlength="175"
+                                name="city" placeholder="City:" title="City" type="text" /></td>
+                        <td style="text-align:left; vertical-align:top;"><label for="inputstate">State: </label> <select
+                                class="form-control" id="inputstate" name="state" required="required">
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select></td>
+                        <td style="text-align:left; vertical-align:top;"><label for="inputzip_code">Zip Code: </label>
+                            <input required="required" class="form-control" id="inputzip_code" maxlength="12"
+                                name="zip_code" placeholder="12345" title="Zip Code" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="width: 100%; text-align:left; vertical-align:top;"><label
+                                for="inputemail_address">Email Address: </label> <input required="required"
+                                class="form-control" id="inputemail_address" maxlength="255" name="email_address"
+                                placeholder="E-mail Address:" title="E-mail Address" type="email" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="width: 50%; text-align: left; vertical-align: top;"><label
+                                for="inputdate_of_birth">Date of Birth:</label> <input required="required"
+                                class="form-control" id="inputdate_of_birth" maxlength="12" name="date_of_birth"
+                                onkeyup="this.value=this.value.replace(/^(\d\d)(\d)$/g,'$1/$2').replace(/^(\d\d\/\d\d)(\d+)$/g,'$1/$2').replace(/[^\d\/]/g,'')"
+                                placeholder="MM/DD/YYYY" title="Date of Birth" type="text" /></td>
+                        <td colspan="2" style="text-align: left; vertical-align: top; width: 50%;"><label
+                                for="inputsex">Sex: </label> <input required="required" class="form-control"
+                                id="inputsex" maxlength="175" name="Sex" placeholder="Sex" title="Sex" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="width: 50%; text-align: left; vertical-align: top;"><label
+                                for="inputrace">Race:</label> <input required="required" class="form-control"
+                                id="inputrace" maxlength="12" name="race" title="Race" type="text" /></td>
+                        <td colspan="2" style="text-align: left; vertical-align: top; width: 50%;"><label
+                                for="inputmartial_status">Marital Status: </label> <input required="required"
+                                class="form-control" id="inputmartial_status" maxlength="175" name="martial_status"
+                                title="Maritial Status" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="width: 50%; text-align: left; vertical-align: top;"><label
+                                for="inputhome_phone">Home Phone:</label> <input required="required"
+                                class="form-control" id="inputhome_phone" name="home_phone" title="Home Phone:"
+                                type="tel" /></td>
+                        <td colspan="2" style="width: 50%; text-align: left; vertical-align: top;"><label
+                                for="inputcell_phone">Cell Phone:</label> <input required="required"
+                                class="form-control" id="inputcell_phone" name="cell_phone" title="Cell Phone:"
+                                type="tel" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="width: 50%; text-align: left; vertical-align: top;"><label
+                                for="inputpar_id">Already have PAR User ID?<br />
+                                (previous or current):</label> <input required="required" class="form-control"
+                                id="inputpar_id" name="par_id" title="Have a PAR User ID?" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="width: 50%; text-align: left; vertical-align: top;"><label
+                                for="inputbackground_check">Which Company did you use for your Background Screen?<br />
+                                (Ex: Pre-Check, Advantage, Certified, etc.):</label> <input required="required"
+                                class="form-control" id="inputbackground_check" name="background_check"
+                                title="Which Company Background Check?" type="text" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr class="new2" />
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered" style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td style="width: 25%; text-align: center;">PAR Data Input by:</td>
+                        <td>&nbsp;</td>
+                        <td style="width: 25%; text-align: center;">Date Entered:</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
