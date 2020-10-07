@@ -17,12 +17,10 @@ def newsize():
         im = Image.open(filename)
         print('Resizing %s...' % (filename))
 
-        '''
         imResize = im.resize((MAX_SIZE), Image.ANTIALIAS)
-        '''
-        im.thumbnail(MAX_SIZE)  # Only works when original is larger
-        im.save(os.path.join(path, filename))
-        # imResize.save(os.path.join(path, filename.replace("png", "jpg")))  uncomment when need to convert to jpg
+        # im.thumbnail(MAX_SIZE)  # Only works when original is larger
+        # im.save(os.path.join(path, filename))
+        imResize.save(os.path.join(path, filename.replace("jpeg", "jpg")))
 
 
 newsize()
